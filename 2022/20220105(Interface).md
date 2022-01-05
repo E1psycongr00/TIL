@@ -17,11 +17,11 @@
 - 인터페이스의 관계
     - 인터페이스와 클래스는 구현관계에 있다. 점선으로 표현하고 다중상속이 가능하다.
     
-    ![DC7FD29E-674E-49A3-80DF-AEAADEA14F73.jpeg](20220105(Interface)\DC7FD29E-674E-49A3-80DF-AEAADEA14F73.jpeg)
+    ![DC7FD29E-674E-49A3-80DF-AEAADEA14F73.jpeg](20220105(Interface)/DC7FD29E-674E-49A3-80DF-AEAADEA14F73.jpeg)
     
     - 인터페이스와 인터페이스는 상속관계이다.
     
-    ![9F788C12-BEF7-4187-8AA0-EAF5DBCA4548.jpeg](20220105(Interface)\9F788C12-BEF7-4187-8AA0-EAF5DBCA4548.jpeg)
+    ![9F788C12-BEF7-4187-8AA0-EAF5DBCA4548.jpeg](20220105(Interface)/9F788C12-BEF7-4187-8AA0-EAF5DBCA4548.jpeg)
     
 
 - **인터페이스 왜쓰지???????**
@@ -32,12 +32,12 @@
         - 디커플링:  서로 객체간의 종속성을 줄이는 작업이다.
             - DB 연동 구조 (No Interface) [비추]
                 
-                ![CF96BEB6-A98C-4B80-B74B-17AD5EDD99C1.jpeg](20220105(Interface)\CF96BEB6-A98C-4B80-B74B-17AD5EDD99C1.jpeg)
+                ![CF96BEB6-A98C-4B80-B74B-17AD5EDD99C1.jpeg](20220105(Interface)/CF96BEB6-A98C-4B80-B74B-17AD5EDD99C1.jpeg)
                 
                 - 만약 내가 오라클 DAO를 사용하고 있었는데 이유가 생겨서 MYSQL DAO를 사용한다고 가정하자. 위와 같은 구조라면 ORACLE DAO 객체를 MYSQL객체로 수정해서 사용해야 한다. MYSQL DAO 클래스를 사용하기 위해서 Service 객체의 메서드와 인스턴스 변수를 수정해야 하므로 유지보수가 힘들어지고 비효율적이다.
             - DB 연동 구조 (use Interface) [추천]
                 
-                ![98AECEC5-CD39-4C7C-9CE0-0754B306CF04.jpeg](20220105(Interface)\98AECEC5-CD39-4C7C-9CE0-0754B306CF04.jpeg)
+                ![98AECEC5-CD39-4C7C-9CE0-0754B306CF04.jpeg](20220105(Interface)/98AECEC5-CD39-4C7C-9CE0-0754B306CF04.jpeg)
                 
                 - **Interface**를 이용해 오라클DAO와 MYSQL를 구현하면 Service 클래스 수정없이 다형성을 이용해서 서로간에 자유롭게 스위칭이 가능하다. 이 방법을 이용하면 다른상황이 오더라도 쉽게 유지보수가 가능하다. 역시 **다형성!!!!**
 

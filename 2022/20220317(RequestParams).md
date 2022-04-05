@@ -18,7 +18,7 @@ login.jsp
 	</form>
 ```
 
-![Untitled](20220317(R%20315cb/Untitled.png)
+![Untitled](20220317(Requestparams)/1.png)
 
 아이디와 비번을 입력하고 누르면 userid : aa, passwd : bb  이런 값으로 폼을 통해 login 으로 post 전동하는 코드이다. 이 때 이 데이터를 받는법.... !!
 
